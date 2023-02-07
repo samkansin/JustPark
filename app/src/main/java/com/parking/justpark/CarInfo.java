@@ -176,7 +176,6 @@ public class CarInfo extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 prov = parent.getItemAtPosition(position).toString();
-                Toast.makeText(CarInfo.this, "Province " + prov, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -198,7 +197,6 @@ public class CarInfo extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 dialog.dismiss();
             }
         });
@@ -211,6 +209,7 @@ public class CarInfo extends AppCompatActivity {
                 slotRef.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
+
                         if(task.isSuccessful()) {
                             if(task.getResult().getValue() == null) {
                                 slotRef.setValue(getIntent().getIntExtra("IndexSlot", 0));
