@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">JustPark</string>
+    <string name="quote_app">Better life with JustPark</string>
+    <string name="quote">A platform built for a new way of life</string>
+
+    <string name="title"><font color="#F8D73A">Just</font>Park</string>
+
+    <!--OAuth2.0 Server firebase-->
+    <string name="web_client_id">14593741855-11st4m798jhq1o1p20mcot2akcjfqjqf.apps.googleusercontent.com</string>
+    <!--Payment Key-->
+    <string name="PUBLISH_KEY">pk_test_51LdET4KTYf6CPwtZckU2vKoNjhYuli6g8ibq8txYRS8rAZylsLYSVcrMu5tYQ2ue5vPiwymt7yzXXlotH2F4VGd400LcVrl6Gd</string>
+    <string name="SECRET_KEY">sk_test_51LdET4KTYf6CPwtZ4T1KJuwiQvayAaMrQB1U79QNOueiR7DWQdHGdlPvhQw0NHF9Ss3nxxIUlCYsjQWoNdyQaIXM00ZoZ9lm75</string>
+
+    <!--Titles-->
+    <string name="first_title">Choose your parking spot</string>
+    <string name="second_title">Reserve a parking spot before arriving max time 1 hours</string>
+    <string name="third_title">Happily heads to Mall</string>
+
+    <!--Descriptions-->
+    <string name="first_desc">You can select any floor you want. We will display all parking spots on your floor and you can choose a parking spot that is empty.</string>
+    <string name="second_desc">We will reserve the parking spot that you choose for a max time of 1 hours.</string>
+    <string name="third_desc">Drive safe, Comfortable worry-free life</string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="get_start_free">Get Started for free</string>
+
+    <!--Navigation Menu-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="Home">Home</string>
+    <string name="Choose_slot">Choose slot</string>
+    <string name="LogOut">Log Out</string>
+
+    <string name="donthave">Don\'t have an account?</string>
+    <string name="have">I have an account</string>
+
+
+
+    <!--Signin/Sigup-->
+
+    <string name="signup">Sign up</string>
+    <string name="signin">Sign in</string>
+    <string name="or">Or</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="sign_up_google">Sign up with Google</string>
+    <string name="name">Full name</string>
+    <string name="phone">Phone</string>
+    <string name="gmail">Email</string>
+    <string name="password">Password</string>
+
+    <!--Input hint-->
+    <string name="hint_name">Samkan Singsuwan</string>
+    <string name="hint_phone">0954821354</string>
+    <string name="hint_email">justpark@gmail.com</string>
+    <string name="hint_password">min. 8 characters</string>
+
+    <!--Function Choose spot-->
+    <string name="name_fn_choose_spot">Choose spot</string>
+    <string name="default_available">0/12</string>
+    <string name="default_floor">1</string>
+    <string name="default_parking_lot">F1</string>
+    <string name="floor">Floor</string>
+    <string-array name="floor_array">
+        <item><font>1</font></item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="book_slot">Book spot</string>
+    <string name="parking_slot">Parking slot</string>
+    <string name="available">Available</string>
+
+    <!--Main-->
+    <string name="name_default">Name</string>
+    <string name="history">History</string>
+
+    <!--Edit profile-->
+    <string name="name_fn_edit_profile">Edit profile</string>
+    <string name="display_name">Display name</string>
+
+    <!--Error message-->
+    <string name="name_empty">Please enter your full name</string>
+
+    <!--Car Info-->
+    <string name="name_fn_Car_info">Car Info</string>
+    <string name="reserve_btn">Reserve</string>
+    <string name="license_plate">License plate</string>
+    <string name="province">Province</string>
+    <string name="license_plate_hint">Enter license plate</string>
+    <string name="province_hint">Select provinces</string>
+
+    <!--Dialog Car Info -->
+    <string name="system">System</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="descript">Your car has a license plate that is</string>
+
+    <!-- CountDown Time-->
+    <string name="CountDown_time">Your reserve slot</string>
+    <string name="license_plate_default">xxxxx</string>
+    <string name="qr">Scan QR Code</string>
+    <string name="cancel_reserve">Cancel booking</string>
+    <string name="descript_count">You should arrive parking slot in</string>
+    <string name="time_out">00:00</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="descript_dialog_cancel">Are you sure to cancel the booking for this parking slot?</string>
+
+
+
+    <!-- CountUp Time-->
+    <string name="CountUp_Time">Parking</string>
+    <string name="price">Price: ฿0</string>
+    <string name="descript_price">The progress in 1 round is equal to ฿15</string>
+    <string name="payment">Payment</string>
+
+
+
+
+
+
+
+</resources>

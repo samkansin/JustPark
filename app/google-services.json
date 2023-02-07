@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "14593741855",
+    "firebase_url": "https://justpark-car-parking-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "justpark-car-parking",
+    "storage_bucket": "justpark-car-parking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14593741855:android:1020129c311c81cbbbf12a",
+        "android_client_info": {
+          "package_name": "com.parking.justpark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14593741855-gqcffnkvk88hfdubhcbovm8s013llaba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parking.justpark",
+            "certificate_hash": "d279ac8f205d970f9b6a2ff3963dd544e66eefd1"
+          }
+        },
+        {
+          "client_id": "14593741855-11st4m798jhq1o1p20mcot2akcjfqjqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCoCHsxFzbXngs0ryYnv4ycev96T3y1gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14593741855-11st4m798jhq1o1p20mcot2akcjfqjqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

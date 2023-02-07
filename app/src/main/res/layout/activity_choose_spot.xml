@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseSpot"
+    android:background="@color/darkGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_ic"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_fn_choose_spot"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:textSize="16sp"
+                        android:text="@string/floor" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/dropdown_floor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="35dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:textSize="16sp"
+                        android:text="@string/parking_slot" />
+
+                    <TextView
+                        android:id="@+id/parking_slot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_parking_lot"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/semibold"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:textSize="16sp"
+                        android:text="@string/available" />
+
+                    <TextView
+                        android:id="@+id/available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_available"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/semibold"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="70dp">
+
+            <RelativeLayout
+                android:id="@+id/bg_slot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/slot">
+
+
+                <LinearLayout
+                    android:id="@+id/zone_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingTop="87dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="87dp"
+                    android:weightSum="5">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot1"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot2"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot3"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot4"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot5"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot6"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zone_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingTop="68dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="72dp"
+                    android:weightSum="5">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot7"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot8"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot9"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot10"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot11"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/slot12"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_unselect_spot"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/book_spot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:layout_alignParentBottom="true"
+            android:text="@string/book_slot"
+            android:fontFamily="@font/bold"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
